@@ -51,7 +51,7 @@ export default function ContactForm({ onAdd }) {
     if (!validateForm()) return;
 
     try {
-      await fetch("http://localhost:5000/api/contacts", {
+      await fetch("https://contact-form-backend.onrender.com/api/contacts", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
