@@ -1,6 +1,9 @@
 export default function ContactList({ contacts, onDelete }) {
-  const remove = async id => {
-    await fetch(`http://localhost:5000/api/contacts/${id}`, { method: "DELETE" });
+  const remove = async (id) => {
+    await fetch(
+      `https://cantact-form-backend.onrender.com/api/contacts/${id}`,
+      { method: "DELETE" }
+    );
     onDelete();
   };
 
